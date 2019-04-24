@@ -21,4 +21,27 @@ int findlargest(int at)
 	                        } 
 	return max; 
 } 
- 
+ int findCT() 
+{ 
+	int index; 
+	int flag = 0; 
+	int i = p[0].AT; 
+	while (1) { 
+		        if (i <= 3) { 
+			                  index = findlargest(i); 
+		                    } 
+		        else
+			      index = findlargest(3); 
+		        printf("Process executing from %d to %d is: p%d\t ",totaltime,totaltime+1,index + 1); 
+	         	p[index].BT -= 1; 
+		        totaltime += 1; 
+		        i++; 
+		        if (p[index].BT == 0) { 
+			                            p[index].CT = totaltime; 
+			                            printf(" Process P%d is completed at %d",p[index].processno,totaltime); 
+		                              } 
+		        printf("\n");  
+		        if (totaltime == prefinaltotal) 
+		     	break; 
+	          } 
+} 
