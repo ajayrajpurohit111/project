@@ -45,3 +45,23 @@ int findlargest(int at)
 		     	break; 
 	          } 
 } 
+int main() 
+{ 
+	int i; 
+    	p[0].id=2132;
+    		p[1].id=2102;
+    			p[2].id=2453;
+	for (i = 0; i < 3; i++) { 
+		p[i].processno = i + 1; 
+	} 
+	for (i = 0; i < 3; i++) 
+	{ 
+		p[i].AT = 0; 
+	} 
+	for (i = 0; i < 3; i++) { 
+		p[0].BT = 2 ; 
+		p[1].BT=4;
+		p[2].BT=8;
+		p[i].BTbackup = p[i].BT; 
+		prefinaltotal += p[i].BT; 
+	} 
