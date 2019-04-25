@@ -79,3 +79,20 @@ printf("\n");
 	} 
 	printf("After execution of all processes ... \n"); 
 	printf("PNo\tPid\tAT\tBT\tCT\tTAT\tWT\n"); 
+	for (i = 0; i < 3; i++) { 
+		printf("%d\t",p[i].processno); 
+		printf("%d\t",p[i].id);
+		printf("%d\t",p[i].AT); 
+		printf("%d\t",p[i].BTbackup); 
+		printf("%d\t",p[i].CT); 
+		printf("%d\t",p[i].TAT); 
+		printf("%d\t",p[i].WT); 
+		printf("\n"); 
+	} 
+	printf("\n");
+	printf("Total TAT = %d\n ",totalTAT); 
+	printf("Average TAT = %f\n",totalTAT / 3.0); 
+	printf("Total WT = %d\n",totalWT);
+	printf("Average WT = %f\n",totalWT / 3.0); 
+	return 0; 
+}
