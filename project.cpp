@@ -65,3 +65,17 @@ int main()
 		p[i].BTbackup = p[i].BT; 
 		prefinaltotal += p[i].BT; 
 	} 
+printf("\n");
+	totaltime += p[0].AT; 
+	prefinaltotal += p[0].AT; 
+	findCT(); 
+	int totalWT = 0; 
+	int totalTAT = 0; 
+	for (i = 0; i < 3; i++) { 
+		p[i].TAT = p[i].CT - p[i].AT; 
+		p[i].WT = p[i].TAT - p[i].BTbackup; 
+		totalWT += p[i].WT; 
+		totalTAT += p[i].TAT; 
+	} 
+	printf("After execution of all processes ... \n"); 
+	printf("PNo\tPid\tAT\tBT\tCT\tTAT\tWT\n"); 
