@@ -9,7 +9,7 @@ int findlargest(int at)
 { 
 	int max = 0,i; 
 	for (i = 0; i < 3; i++) {  
-	                s          if (p[i].AT <= at) { 
+	                          if (p[i].AT <= at) { 
 	                                               if(p[i].BT==p[max].BT)
 				                                      {
 				                                     	if(p[i].id<p[max].id)
